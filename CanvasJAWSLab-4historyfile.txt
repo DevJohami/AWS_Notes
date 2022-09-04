@@ -32,17 +32,7 @@ aws ec2 run-instances \
    22  aws ec2 authorize-security-group-ingress --group-name Challenge-SG --protocol tcp --port 22 --cidr 203.0.113.0/24
    23  aws ec2 authorize-security-group-ingress --group-name Challenge-SG --protocol tcp --port 22 --cidr 203.0.113.0/24 vpcid=vpc-0a2b73b8100df7235
    24  aws ec2 authorize-security-group-ingress --group-name Challenge-SG --protocol tcp --port 22 --cidr 203.0.113.0/24 --ip-permissions vpcid=vpc-0a2b73b8100df7235
-   25  aws ec2 authorize-security-group-ingress --group-name Challenge-SG --port 22 --cidr 203.0.113.0/24 --ip-permissions vpcid=vpc-0a2b73b8100df7235, IpProtocol=tcp 
-   26  aws ec2 authorize-security-group-ingress --group-name Challenge-SG --port 22 --cidr 203.0.113.0/24 --ip-permissions vpcid=vpc-0a2b73b8100df7235, IpProtocol=tcp, ToPort=22 
-   27  aws ec2 authorize-security-group-ingress --group-name Challenge-SG  --cidr 203.0.113.0/24 --ip-permissions vpcid=vpc-0a2b73b8100df7235, IpProtocol=tcp, ToPort=22 
-   28  aws ec2 authorize-security-group-ingress --group-name Challenge-SG  --ip-permissions vpcid=vpc-0a2b73b8100df7235, IpProtocol=tcp, ToPort=22, CidrIP=0.0.0.0/0 
-   29  aws ec2 authorize-security-group-ingress --group-name Challenge-SG  --ip-permissions VpcId=vpc-0a2b73b8100df7235, IpProtocol=tcp, ToPort=22, CidrIP=0.0.0.0/0 
-   30  aws ec2 authorize-security-group-ingress --group-name Challenge-SG  --ip-permissions VpcId=vpc-0a2b73b8100df7235,IpProtocol=tcp,ToPort=22,CidrIP=0.0.0.0/0 
-   31  aws ec2 authorize-security-group-ingress --group-name Challenge-SG  --ip-permissions VpcId=vpc-0a2b73b8100df7235,IpProtocol=tcp,ToPort=22,IpRanges=0.0.0.0/0 
-   32  aws ec2 authorize-security-group-ingress --group-name Challenge-SG  --ip-permissions VpcId=vpc-0a2b73b8100df7235,IpProtocol=tcp,ToPort=22,IpRanges=[{CidrIp=0.0.0.0/0}] 
-   33  aws ec2 authorize-security-group-ingress --group-name Challenge-SG  --ip-permissions UserIdGroupPairs=[{VpcId=vpc-0a2b73b8100df7235}],IpProtocol=tcp,ToPort=22,IpRanges=[{CidrIp=0.0.0.0/0}] 
-   34  aws ec2 authorize-security-group-ingress --ip-permissions UserIdGroupPairs=[{VpcId=vpc-0a2b73b8100df7235,GroupName=Challenge-SG}],IpProtocol=tcp,ToPort=22,IpRanges=[{CidrIp=0.0.0.0/0}] 
-   35  aws ec2 authorize-security-group-ingress --ip-permissions UserIdGroupPairs=[{GroupName=Challenge-SG,VpcId=vpc-0a2b73b8100df7235}],IpProtocol=tcp,ToPort=22,IpRanges=[{CidrIp=0.0.0.0/0}] 
+   
    36  aws ec2 authorize-security-group-ingress --group-id sg-0922e62e570e2859d --protocol tcp --port 22 --cidr 0.0.0.0/0
    37  history
    38  ls
