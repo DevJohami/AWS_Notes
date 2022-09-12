@@ -24,7 +24,6 @@ aws ec2 run-instances \
    15  aws ec2 describe-instances --instance-ids $INSTANCE --query 'Reservations[].Instances[].State.Name' --output text
    16  echo $INSTANCE
    17  aws ec2 describe-instances --instance-ids $INSTANCE --query Reservations[].Instances[].PublicDnsName --output text
-   18  aws ec2 authorize-security-group-ingress \ --group- name Misconfigured Web Server \ --protocol tcp \ --port 22 \ --cidr 203.0.113.0/24
    19  aws ec2 authorize-security-group-ingress --group- name Misconfigured Web Server --protocol tcp --port 22 --cidr 203.0.113.0/24
    20  aws ec2 authorize-security-group-ingress --group- name WebSecurityGroup --protocol tcp --port 22 --cidr 203.0.113.0/24
    21  aws ec2 authorize-security-group-ingress --group-name WebSecurityGroup --protocol tcp --port 22 --cidr 203.0.113.0/24
