@@ -20,7 +20,6 @@ aws ec2 run-instances \
 --query 'Instances[*].InstanceId' \
 --output text \
 )
-   
    15  aws ec2 describe-instances --instance-ids $INSTANCE --query 'Reservations[].Instances[].State.Name' --output text
    16  echo $INSTANCE
    17  aws ec2 describe-instances --instance-ids $INSTANCE --query Reservations[].Instances[].PublicDnsName --output text
