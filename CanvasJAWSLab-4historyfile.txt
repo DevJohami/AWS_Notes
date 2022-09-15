@@ -33,5 +33,4 @@ aws ec2 run-instances \
    39  git clone https://github.com/DevJohami/AWS_Notes.git
    40  sudo yum install git -y
    41  git clone https://github.com/DevJohami/AWS_Notes.git
-   42  history
    43  history > ./AWS_Notes/historyfile.txt
