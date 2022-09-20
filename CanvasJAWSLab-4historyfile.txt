@@ -27,7 +27,7 @@ aws ec2 run-instances \
    36  aws ec2 authorize-security-group-ingress --group-id sg-0922e62e570e2859d --protocol tcp --port 22 --cidr 0.0.0.0/0
      history
      ls
-   39  git clone https://github.com/DevJohami/AWS_Notes.git
-   40  sudo yum install git -y
-   41  git clone https://github.com/DevJohami/AWS_Notes.git
-   43  history > ./AWS_Notes/historyfile.txt
+    git clone https://github.com/DevJohami/AWS_Notes.git
+    sudo yum install git -y
+     git clone https://github.com/DevJohami/AWS_Notes.git
+    history > ./AWS_Notes/historyfile.txt
