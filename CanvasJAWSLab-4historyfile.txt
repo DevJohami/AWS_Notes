@@ -8,7 +8,7 @@ AZ=`curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone`
     8  SG=$(aws ec2 describe-security-groups --filters Name=group-name,Values=WebSecurityGroup --query SecurityGroups[].GroupId --output text)
     9  echo $SG
    10  wget https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/CUR-TF-100-RESTRT-1/171-lab-JAWS-create-ec2/s3/UserData.txt
-   11  cat UserData.txt
+    cat UserData.txt
    INSTANCE=$(\
 aws ec2 run-instances \
 --image-id $AMI \
