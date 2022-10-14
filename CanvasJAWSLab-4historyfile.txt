@@ -4,7 +4,7 @@ AZ=`curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone`
     4  echo $AMI
     5  SUBNET=$(aws ec2 describe-subnets --filters 'Name=tag:Name,Values=Public Subnet' --query Subnets[].SubnetId --output text)
     6  echo $SUBNET
-    7  echo $AZ
+      echo $AZ
       SG=$(aws ec2 describe-security-groups --filters Name=group-name,Values=WebSecurityGroup --query SecurityGroups[].GroupId --output text)
      echo $SG
     wget https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/CUR-TF-100-RESTRT-1/171-lab-JAWS-create-ec2/s3/UserData.txt
